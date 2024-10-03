@@ -3,6 +3,8 @@ from PIL import ImageGrab
 
 import tensorflow as tf
 import numpy as np
+# Only for showing the input image for the model (commented)
+import matplotlib.pyplot as plt
 
 class PaintWindow(tk.Tk):
     """
@@ -80,7 +82,7 @@ class PaintWindow(tk.Tk):
         self.image = np.array([self.image])
         # Invert it because model is trained with white writing on black background
         self.image = np.invert(self.image)
-
+                    
     
     def predict_digit(self):
         """
@@ -88,6 +90,9 @@ class PaintWindow(tk.Tk):
 
         Also prints the result.
         """
+        # plt.imshow(self.image[0], cmap="gray")
+        # plt.show()
+
         # Returns array of probabilities
         self.prediction = self.model.predict(self.image)
 
