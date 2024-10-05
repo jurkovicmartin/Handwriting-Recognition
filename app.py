@@ -99,4 +99,5 @@ class PaintWindow(tk.Tk):
         # Index of highest probability
         max_index = np.argmax(self.prediction[0])
 
-        print(f"The number is {max_index} with probability {self.prediction[0][max_index]}.")
+        print(f"The number is probably {max_index}.")
+        # print(f"Probability is {self.prediction[0][max_index]}")

@@ -41,8 +41,7 @@ def create_model(path: str, data, epochs: int):
     # Flatten: from 2D grid to 1D vector
     # Dense: layer with neurons
     model.add(tf.keras.layers.Flatten(input_shape=(28, 28)))
-    model.add(tf.keras.layers.Dense(24, activation="relu"))
-    model.add(tf.keras.layers.Dense(48, activation="relu"))
+    model.add(tf.keras.layers.Dense(64, activation="relu"))
     # Output layer
     model.add(tf.keras.layers.Dense(10, activation="softmax"))
 
