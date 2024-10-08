@@ -35,27 +35,34 @@ Results from testing of some model parameters. **Not mentioned model parameters*
 
 *Table 1: Testing impact of number of hidden layers + neurons on accuracy.*
 *(20 training epochs)*
-| Hidden layers | Neurons       | Accuracy |
-|---------------|---------------|----------|
-| 1             | 16            | 0.9475   |
-| 1             | 32            | 0.9627   |
-| 1             | 64            | 0.9735   |
-| 1             | 128           | 0.9751   |
-| 2             | 16 + 32       | 0.9567   |
-| 2             | 32 + 64       | 0.9667   |
-| 2             | 64 + 128      | 0.9685   |
-| 3             | 16 + 32 + 16  | 0.9548   |
-| 3             | 32 + 64 + 32  | 0.9700   |
-| 3             | 64 + 128 + 64 | 0.9725   |
+| Hidden layers | Neurons       | Accuracy [%] |
+|---------------|---------------|--------------|
+| 1             | 16            | 94.75        |
+| 1             | 32            | 96.27        |
+| 1             | 64            | 97.35        |
+| 1             | 128           | 97.51        |
+| 2             | 16 + 32       | 95.67        |
+| 2             | 32 + 64       | 96.67        |
+| 2             | 64 + 128      | 96.85        |
+| 2             | 16 + 16       | 95.22        |
+| 2             | 32 + 32       | 96.88        |
+| 2             | 64 + 64       | 97.30        |
+| **2**         | **128 + 128** | **97.58**    |
+| 2             | 32 + 16       | 96.23        |
+| 2             | 64 + 32       | 97.19        |
+| 2             | 128 + 64      | 97.39        |
+| 3             | 16 + 32 + 16  | 95.48        |
+| 3             | 32 + 64 + 32  | 97.00        |
+| 3             | 64 + 128 + 64 | 97.25        |
 
 *Table 2: Testing impact of number of epochs on accuracy.*
 *(model: 1 hidden layer with 32 neurons)*
-| Epochs | Accuracy |
-|--------|----------|
-| 10     | 0.9608   |
-| 20     | 0.9687   |
-| 30     | 0.9646   |
-| 40     | 0.9610   |
-| 50     | 0.9609   |
+| Epochs | Accuracy [%] |
+|--------|--------------|
+| 10     | 96.08        |
+| 20     | 96.87        |
+| 30     | 96.46        |
+| 40     | 96.10        |
+| 50     | 96.09        |
 
 There is a accuracy decreasing trend with increasing number of epochs. I assume that it is caused by overtraining this simple model. In that case the model decision becomes less general and more memorizing with training data.
