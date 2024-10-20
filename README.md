@@ -31,6 +31,8 @@ Pillow
 ## Notes
 This is my first take on machine learning problem.
 
+***Solution for the same problem with the same dataset is also in ML-Fundamentals repository in folder MultiLayer. In this folder is an example where i used from scratch coded model.***
+
 Results from testing of some model parameters. **Not mentioned model parameters** are the same as described in "Model properties" chapter.
 
 *Table 1: Testing impact of number of hidden layers + neurons on accuracy.*
